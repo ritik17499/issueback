@@ -639,11 +639,11 @@ let loginFunction = (req, res) => {
         .then((resolve) => {
             let apiResponse = response.generate(false, 'Login Successful', 200, resolve)
             res.status(200)
-            res.send(apiResponse)
+            res.send(200)
         })
         .catch((err) => {
-            console.log("errorhandler");
-            res.send(err)
+            console.log("errorhandler1");
+            res.send(200)
         })
 }
 
